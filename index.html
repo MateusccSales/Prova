@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #BCD2EE;
+                
+            }
+            li {
+                float: left;
+                border:1px solid #639FAB;                
+            }
+            li a {
+                display: block;
+                text-align: center;
+                color: black;
+                text-decoration: none;
+            }
+            li a:hover {
+                background-color: #1C5D99;
+                color: white;
+            }
+            .item1 { grid-area: header; }
+            .item2 { grid-area: menu; }
+            .item3 { grid-area: main; }
+            .item4 { grid-area: footer; }
+
+            .grid-container {
+                display: grid;
+                grid-template-areas:
+                    'header header header header header header'
+                    'menu main main main main main'
+                    'footer footer footer footer footer footer';
+                grid-gap: 10px;
+                background-color: #BCD2EE;
+                padding: 10px;
+            }
+
+            .grid-container > div {
+                text-align: center;
+                padding: 0px 0px;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        
+
+        <div class="grid-container">
+            <div class="item1">
+                <ul id="inicio">
+                    <li><a style="padding: 10px 16px;" href="#home">Home</a></li>
+                    <li><a style="padding: 10px 16px;" href="#News">News</a></li>
+                    <li><a style="padding: 10px 16px;" href="#contact">Contact Us</a></li>
+                    <li><a style="padding: 10px 16px;" href="#member">Become a Member</a></li>
+                    <li style="float: right"><a style="padding: 10px 16px;" href="#sing in">Sing In</a></li>
+                    <li style="float: right"><a style="padding: 10px 16px;" href="#sing up">Sing Up</a></li>
+                </ul>
+            </div>
+            <div class="item2">
+                <ul>
+                    <li style="float: none; padding: 4px 4px;"><a href="topico1">Topico 1</a></li> 
+                    <li style="float: none; padding: 4px 4px;"><a href="topico2">Topico 2</a></li> 
+                    <li style="float: none; padding: 4px 4px;"><a href="topico3">Topico 3</a></li> 
+                    <li style="float: none; padding: 4px 4px;"><a href="topico4">Topico 4</a></li> 
+                    <li style="float: none; padding: 4px 4px;"><a href="topico5">Topico 5</a></li> 
+                    <li style="float: none; padding: 4px 4px;"><a href="topico6">Topico 6</a></li> 
+                </ul>
+            </div>
+            <div class="item3">
+                <img src="https://images.squarespace-cdn.com/content/593df14037c58172ed4d5ac9/1497734101092-YV4MY8JSHRJ5KG3HF8T2/helloworld.png?format=1000w&content-type=image%2Fpng" alt="Hello World" height="100%" width="100%">
+            </div>  
+            <div class="item4">
+                <ul>
+                    <li style="float: none;"><a href="#inicio">Voltar para o topo</a></li>    
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
